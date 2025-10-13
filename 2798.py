@@ -1,4 +1,4 @@
-# combinations 사용으로 조합 구하기기
+# combinations 사용으로 조합 구하기
 from itertools import combinations
 
 n, m = map(int, input().split())
