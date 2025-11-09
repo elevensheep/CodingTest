@@ -1,10 +1,9 @@
-# def func(arr):
-#     return max(arr)
-# n = int(input())
-# arr = list(map(int, input().split()))
+def func(arr):
+    lst = [i/max(arr) * 100 for i in arr]
+    return sum(lst)/len(lst)
 
-# if len(arr) == n:
-#     print(sum(arr)/len(arr))
+n = int(input())
+arr = list(map(int, input().split()))
 
-arr = [4, 2, 1, 5, 3]
-print(arr.pop(4))
+if len(arr) == n:
+    print(func(arr))
